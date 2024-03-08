@@ -1,8 +1,4 @@
-'use client';
-
-import PlanCard from "../components/PlanCard"
-import { GetServerSideProps } from 'next';
-import { prisma } from '../lib/prisma';
+import PlanCard from "../components/PlanCard";
 
 const planes = [
     { 
@@ -48,26 +44,23 @@ const planes = [
     }
 ];
 
-// export const getServerSideProps: GetServerSideProps = async ({ params }) => {
-//     const plans = await prisma.plan.findMany();
-//     return {
-//       props: plans,
-//     };
-// };
-
 interface Plan {
     name: string;
     price: number;
     features: string[];
 };
 
-type Props = {
-    plans: Plan;
+const fetchPlans = async() => {
+    const response = await fetch('http://localhost:3000/api/plans', { method: 'GET'});
+    return response.json();
 };
 
-const PlanesPage = ({ plans }: Props) => {
+type Props = {
+};
 
-    console.log('plans ',plans);
+const PlanesPage = async ({  }: Props) => {
+    const response  = await fetchPlans();
+    console.log('plans', response.data);
 
     return (
         <div className="container mx-auto pt-2 pb-32">
@@ -75,7 +68,7 @@ const PlanesPage = ({ plans }: Props) => {
 
             {/* Cards planes */}
             <div className="flex justify-center gap-4 flex-wrap">
-                { planes.map( plan => (
+                { planes.map( (plan: any) => (
                     <PlanCard 
                         key={plan.id}
                         {...plan}

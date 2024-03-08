@@ -11,6 +11,7 @@ interface LatLng {
 
 const gyms = [
     {
+        id: 1,
         name: "Rivafit",
         address: "Av. Providencia 1234, Providencia, Santiago, Chile",
         location: "Providencia",
@@ -18,6 +19,7 @@ const gyms = [
         coordinates: { lat: -33.430637, lng: -70.609677 },
     },
     {
+        id: 2,
         name: "Rivafit",
         address: "Av. Las Condes 1234, Las Condes, Santiago, Chile",
         location: "Las Condes",
@@ -47,7 +49,7 @@ const UbicacionesPage = () => {
                     { gyms.map( gym => (
                         <>
                             <Address
-                                key={gym.name}
+                                key={gym.id}
                                 gymName={gym.name}
                                 address={gym.address}
                                 location={gym.location}
