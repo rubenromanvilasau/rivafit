@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { toCurrency } from '../../utils/index';
 import { v4 as uuidv4 } from 'uuid';
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 
 const ProductoPage = () => {

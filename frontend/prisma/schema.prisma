@@ -17,8 +17,12 @@ model Plan {
   planId        Int               @id @default(autoincrement()) @map(name: "plan_id")
   name          String?
   price         Int
-  createdAt     DateTime          @default(now()) @map(name: "created_at")
+
   features      PlanFeature[]
+  clients       Client[]
+
+  createdAt     DateTime          @default(now()) @map(name: "created_at")
+  
   @@map("plans")
 }
 
@@ -27,15 +31,76 @@ model PlanFeature {
   planId        Int               @map(name: "plan_id")
   name          String
   plan          Plan              @relation(fields: [planId], references: [planId], onDelete: NoAction, onUpdate: NoAction)
+ 
   @@map("plans_features")
 }
 
 model Client {
-  client_id     Int       @id @default(autoincrement()) @map(name: "client_id")
-  name          String?
-  email         String?   @unique
+  clientId      Int          @id @default(autoincrement()) @map(name: "client_id")
+  name          String
+  email         String       @unique
+  phone         String?
+  planId        Int          @map(name: "plan_id")
+  isActive      Boolean      @default(true) @map(name: "is_active")  
+  is_trainer    Boolean      @default(false)
+
+  trainer       TrainerClient? 
+  plan          Plan     @relation(fields: [planId], references: [planId], onDelete: NoAction, onUpdate: NoAction)
+
   createdAt     DateTime  @default(now()) @map(name: "created_at")
   updatedAt     DateTime  @updatedAt @map(name: "updated_at")
 
   @@map("clients")
+}
+
+model Trainer {
+  trainerId         Int       @id @default(autoincrement()) @map(name: "trainer_id")
+  name              String
+  rut               String
+  phone             String?
+  email             String
+  tiktok_url        String?
+  instagram_url     String?
+  clients           TrainerClient[]
+
+  createdAt     DateTime  @default(now()) @map(name: "created_at")
+  updatedAt     DateTime  @updatedAt @map(name: "updated_at")
+
+  @@map("trainers")
+}
+
+model TrainerClient {
+  trainerId         Int         
+  clientId          Int         @id
+
+  client            Client      @relation(fields: [clientId], references: [clientId], onDelete: NoAction, onUpdate: NoAction)
+  trainer           Trainer     @relation(fields: [trainerId], references: [trainerId], onDelete: NoAction, onUpdate: NoAction)
+
+  @@map("trainers_clients")
+}
+
+model Gym {
+  trainerId         Int       @id @default(autoincrement()) @map(name: "gym_id")
+  name              String
+  address           String
+  latitude          String
+  longitude         String
+  comuna            String
+  region            String
+  phone             String
+
+  @@map("gyms")
+}
+
+model Product {
+  productId         Int       @id @default(autoincrement()) @map(name: "product_id")
+  name              String
+  stock             Int
+  price             Int
+  discount          Decimal?
+
+  createdAt         DateTime  @default(now()) @map(name: "created_at")
+  updatedAt         DateTime  @updatedAt @map(name: "updated_at")
+
+  @@map("products")
 }

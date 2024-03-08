@@ -6,6 +6,6 @@ type ResponseData = {
 };
 
 export async function GET(request: Request) {
-    const plans = await prisma.client.findMany({});
-    return NextResponse.json({ message: 'Hello from clients!', data: plans });
+    const clients = await prisma.client.findMany({});
+    return NextResponse.json({ message: 'Hello from clients!', data: clients });
 }
