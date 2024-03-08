@@ -60,7 +60,7 @@ type Props = {
 
 const PlanesPage = async ({  }: Props) => {
     const response  = await fetchPlans();
-    console.log('plans', response.data);
+    console.log('plans', response);
 
     return (
         <div className="container mx-auto pt-2 pb-32">
