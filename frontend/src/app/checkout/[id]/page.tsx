@@ -1,5 +1,5 @@
 'use client';
-import { toCurrency } from '../../utils/index';
+import { toCurrency } from '../../../utils/index';
 
 const CheckoutPage = () => {
     return (

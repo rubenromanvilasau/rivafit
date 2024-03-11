@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link";
 import { FaInstagram, FaTiktok } from 'react-icons/fa';
-import TrainerCard from "../components/TrainerCard";
+import TrainerCard from "../../components/TrainerCard";
 
 const NosotrosPage = () => {
 

@@ -1,4 +1,4 @@
-import InscriptionForm from '../components/InscriptionForm';
+import InscriptionForm from '../../components/InscriptionForm';
 
 const InscripcionPage = () => {
     return (

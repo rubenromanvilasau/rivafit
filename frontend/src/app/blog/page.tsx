@@ -1,4 +1,4 @@
-import VideoPost from "../components/VideoPost";
+import VideoPost from "../../components/VideoPost";
 
 const BlogPage = () => {
     return (

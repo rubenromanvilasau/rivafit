@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { tabs } from "../../constants/tabs"
+import { tabs } from "../../lib/constants"
 import { GiHamburgerMenu } from "react-icons/gi"
 
 const Navbar = () => {
