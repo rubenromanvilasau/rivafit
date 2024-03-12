@@ -2,14 +2,15 @@ import Link from "next/link"
 import { toCurrency } from "../utils"
 
 interface Feature {
-    id: number
-    description: string
+    id: number;
+    description: string;
+    name: string;
 }
 
 type Props = {
-    name: string
-    features: Feature[]
-    price: number
+    name: string;
+    features: Feature[];
+    price: number;
 }
 
 const PlanCard = ({ name, features, price }: Props) => {
@@ -27,7 +28,7 @@ const PlanCard = ({ name, features, price }: Props) => {
             <div className="p-4">
                 <ul className="p-4">
                     { features.map( feature => (
-                        <li key={feature.id} className="text-slate-500 border-b-2 border-purple-300 mb-4">{ feature.description }</li>
+                        <li key={feature.id} className="text-slate-500 border-b-2 border-purple-300 mb-4">{ feature.name }</li>
 
                     ))}
                 </ul>

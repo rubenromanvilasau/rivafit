@@ -1,9 +1,14 @@
+'use client'
 import { tabs } from "@/lib/constants";
 import Image from "next/image"
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+
+    const pathname = usePathname();
+
     return (
         <footer className="w-full bg-purple-900 p-4 flex justify-between items-center">
             <Image
@@ -32,7 +37,7 @@ const Footer = () => {
                         <FaWhatsapp className="text-2xl text-white cursor-pointer"/>
                     </Link>
                     <Link href={'https://wa.me/56989209062'} rel="noopener noreferrer" target="_blank">
-                        <span className="underline underline-offset-2">+56 9 1234 5678</span>
+                        <span className="underline underline-offset-2 text-white">+56 9 1234 5678</span>
                     </Link>
                 </div>
             </div>
@@ -40,7 +45,7 @@ const Footer = () => {
                 { tabs.map( tab => (
                     <Link href={tab.href} key={tab.name}>
                         <li 
-                            className="text-sm cursor-pointer underline underline-offset-2 hover:text-purple-950 capitalize"
+                            className={`${pathname === tab.href && 'underline'} text-sm text-white cursor-pointer underline-offset-2 hover:text-purple-950 capitalize`}
                         >
                             { tab.name }
                         </li>

@@ -36,7 +36,7 @@ const Navbar = () => {
             </ul>
 
             <Link href={'/inscripcion'}>
-                <button className="bg-purple-700 tracking-widest rounded-full h-11 p-4 flex items-center uppercase font-bold hover:bg-white hover:text-purple-700 hover:border-2 hover:border-purple-800 transition-all ease-in duration-300">
+                <button className="bg-purple-700 text-white tracking-widest rounded-full h-11 p-4 flex items-center uppercase font-bold hover:bg-white hover:text-purple-700 border-2 border-purple-800 transition-all ease-in duration-300">
                     Unirme
                 </button>
             </Link>

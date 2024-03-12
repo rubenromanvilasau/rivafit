@@ -16,8 +16,8 @@ const Feature = ({imagePath, title, description}: Props) => {
                 alt={title} 
                 className="rounded-full w-32 h-32 bg-purple-700 border-2 border-purple-800 object-cover"
             />
-            <span className="text-purple-300 font-bold text-xl">{ title }</span>
-            <p>{ description }</p>
+            <span className="text-purple-200 font-bold text-xl">{ title }</span>
+            <p className="text-white">{ description }</p>
         </div>    
     )
 }

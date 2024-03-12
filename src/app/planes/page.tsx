@@ -1,3 +1,4 @@
+import { getAllPlans } from "@/lib/actions/plans";
 import PlanCard from "../../components/PlanCard";
 
 const planes = [
@@ -50,17 +51,13 @@ interface Plan {
     features: string[];
 };
 
-const fetchPlans = async() => {
-    const response = await fetch('http://localhost:3000/api/plans', { method: 'GET'});
-    return response.json();
-};
 
 type Props = {
 };
 
 const PlanesPage = async ({  }: Props) => {
-    const response  = await fetchPlans();
-    console.log('plans', response);
+    const plans = await getAllPlans();
+    console.log('plans', plans);
 
     return (
         <div className="container mx-auto pt-2 pb-32">
@@ -68,7 +65,7 @@ const PlanesPage = async ({  }: Props) => {
 
             {/* Cards planes */}
             <div className="flex justify-center gap-4 flex-wrap">
-                { planes.map( (plan: any) => (
+                { plans.map( (plan: any) => (
                     <PlanCard 
                         key={plan.id}
                         {...plan}

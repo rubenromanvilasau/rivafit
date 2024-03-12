@@ -37,7 +37,7 @@ const InscriptionForm = () => {
 
                 <div className="flex flex-col">
                     <label htmlFor="plan" className="text-slate-700">Plan</label>
-                    <select name="plan" className="outline-none border-b-2 border-purple-800 rounded-none focus:outline-none text-purple-800 p-2 w-full cursor-pointer">
+                    <select name="plan" className="outline-none bg-transparent border-b-2 border-purple-800 rounded-none focus:outline-none text-purple-800 p-2 w-full cursor-pointer">
                         <option value="">Básico</option>   
                         <option value="">Intermedio</option>
                         <option value="">Full</option>
@@ -45,7 +45,7 @@ const InscriptionForm = () => {
                 </div>
 
                 <div className="flex justify-end">
-                    <button className="bg-purple-800 rounded-lg px-4 py-2 hover:bg-white hover:border-2 hover:border-purple-800 hover:text-purple-800 transition-all ease-in duration-300 font-bold tracking-wide">Inscribirme</button>
+                    <button className="bg-purple-800 border-2 border-purple-800 rounded-lg px-4 py-2 text-white hover:bg-white hover:border-2  hover:text-purple-800 transition-all ease-in duration-300 font-bold tracking-wide">Inscribirme</button>
                 </div>
             </div>
         </form>

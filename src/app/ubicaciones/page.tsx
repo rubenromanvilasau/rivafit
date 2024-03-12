@@ -1,7 +1,6 @@
 'use client'
-import { useState } from "react"
-import { FaClipboard } from "react-icons/fa";
-import Address from "../../components/Address";
+import { useEffect, useState } from "react"
+import Address from "@/components/Address";
 
 //TODO GLOBALIZE THIS
 interface LatLng {
@@ -36,6 +35,9 @@ const UbicacionesPage = () => {
     const changeMapCenter = ( latLng: LatLng ) => {
         setMapCenter( latLng );
     }
+    
+    useEffect(() => {
+    },[]);
 
     return (
         <div className="container mx-auto pb-32 px-4">

@@ -80,7 +80,7 @@ model TrainerClient {
 }
 
 model Gym {
-  trainerId         Int       @id @default(autoincrement()) @map(name: "gym_id")
+  gymId             Int       @id @default(autoincrement()) @map(name: "gym_id")
   name              String
   address           String
   latitude          String
