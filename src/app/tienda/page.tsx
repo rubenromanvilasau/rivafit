@@ -33,9 +33,9 @@ const products = [
 
 const TiendaPage = () => {
     return (
-        <div className="container mx-auto pb-32">
-            <h1 className="font-bold text-4xl mt-4">Tienda</h1>
-            <div className="flex gap-4 flex-wrap mt-4">
+        <div className="container p-4 mx-auto md:pb-32">
+            <h1 className="font-bold text-4xl mt-4 text-white">Tienda</h1>
+            <div className="flex gap-16 flex-wrap mt-4">
                 { products.map( product => (
                     <ProductCard
                         key={product.id}

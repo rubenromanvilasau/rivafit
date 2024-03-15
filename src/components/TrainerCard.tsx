@@ -21,14 +21,14 @@ const TrainerCard = ({ name, instagram, tiktok, image, discipline }: Props) => {
                 height={200}
                 style={{ width: '100%', height: '200px'}}
             />
-            <span className="text-purple-700 text-2xl uppercase font-bold absolute bottom-8 left-4 tracking-wide">{ name }</span>
+            <span className="text-primary text-2xl uppercase font-bold absolute bottom-8 left-4 tracking-wide">{ name }</span>
             <span className="text-white text-xl uppercase font-bold absolute bottom-2 left-4">{ discipline}</span>
             <div className="flex items-center absolute right-4 bottom-2 gap-2">
                 <Link href={tiktok} rel="noopener noreferrer" target="_blank">
-                    <FaTiktok className="text-xl text-white hover:text-purple-300 transition-all ease-out duration-300"/>
+                    <FaTiktok className="text-xl text-white hover:text-primary transition-all ease-out duration-300"/>
                 </Link>
                 <Link href={instagram} rel="noopener noreferrer" target="_blank">
-                    <FaInstagram className="text-xl text-white hover:text-purple-300 transition-all ease-out duration-300"/>
+                    <FaInstagram className="text-xl text-white hover:text-primary transition-all ease-out duration-300"/>
                 </Link>
             </div>
         </div>

@@ -7,7 +7,7 @@ const NosotrosPage = () => {
 
     return (
         <div className="container mx-auto p-4 md:mb-32">
-            <h1 className="text-4xl font-bold uppercase mt-4">Nuestros entrenadores</h1>
+            <h1 className="text-4xl font-bold uppercase mt-4 text-white">Nuestros entrenadores</h1>
 
             <div className="flex items-center justify-center md:justify-normal flex-wrap mt-8 gap-4">
                 <TrainerCard

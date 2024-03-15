@@ -61,7 +61,7 @@ const PlanesPage = async ({  }: Props) => {
 
     return (
         <div className="container mx-auto pt-2 pb-32">
-            <h1 className="text-4xl uppercase font-bold mt-4">Nuestros planes</h1>
+            <h1 className="text-4xl uppercase font-bold mt-4 text-white">Nuestros planes</h1>
 
             {/* Cards planes */}
             <div className="flex justify-center gap-4 flex-wrap">

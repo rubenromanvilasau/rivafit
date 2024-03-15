@@ -11,7 +11,7 @@ interface LatLng {
 const gyms = [
     {
         id: 1,
-        name: "Rivafit",
+        name: "Rivanex",
         address: "Av. Providencia 1234, Providencia, Santiago, Chile",
         location: "Providencia",
         phone: "+56 9 1234 5678",
@@ -19,7 +19,7 @@ const gyms = [
     },
     {
         id: 2,
-        name: "Rivafit",
+        name: "Rivanex",
         address: "Av. Las Condes 1234, Las Condes, Santiago, Chile",
         location: "Las Condes",
         phone: "+56 9 1234 5678",
@@ -41,7 +41,7 @@ const UbicacionesPage = () => {
 
     return (
         <div className="container mx-auto pb-32 px-4">
-            <h1 className="mt-4 text-4xl font-bold uppercase">Encuentranos en</h1>
+            <h1 className="mt-4 text-4xl font-bold uppercase text-white">Encuentranos en</h1>
             <div className="flex flex-wrap mt-4">
                 <div className="w-full min-h-[500px] md:w-1/2 md:px-4 min-w-[300px]">
                     <iframe src={`https://maps.google.com/maps?q=${mapCenter?.lat}, ${mapCenter?.lng}&z=15&output=embed`}  allowFullScreen={false} loading="lazy" style={{border:0, width: '100%', height: '100%'}}  ></iframe>
@@ -59,7 +59,7 @@ const UbicacionesPage = () => {
                                 coordinates={gym.coordinates}
                                 onClickAddress={changeMapCenter}
                             />
-                            <hr className="border-purple-700"/>
+                            <hr className="border-primary"/>
                         </>
                     ))}
                 </div>

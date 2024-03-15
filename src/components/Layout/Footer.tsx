@@ -10,10 +10,10 @@ const Footer = () => {
     const pathname = usePathname();
 
     return (
-        <footer className="w-full bg-purple-900 p-4 flex justify-between items-center">
+        <footer className="w-full bg-black border-t-2 border-primary p-4 flex justify-between items-center">
             <Image
                 src={"/logo.png"}
-                alt="Rivafit"
+                alt="Rivanex"
                 width={100}
                 height={100}
             />
@@ -40,12 +40,13 @@ const Footer = () => {
                         <span className="underline underline-offset-2 text-white">+56 9 1234 5678</span>
                     </Link>
                 </div>
+                <small className="text-slate-500">©Rivanex, {new Date().getFullYear()}</small>
             </div>
             <ul>
                 { tabs.map( tab => (
                     <Link href={tab.href} key={tab.name}>
                         <li 
-                            className={`${pathname === tab.href && 'underline'} text-sm text-white cursor-pointer underline-offset-2 hover:text-purple-950 capitalize`}
+                            className={`${pathname === tab.href && 'underline'} text-sm text-white cursor-pointer underline-offset-2 hover:text-primary capitalize`}
                         >
                             { tab.name }
                         </li>

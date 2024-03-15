@@ -2,8 +2,8 @@ import VideoPost from "../../components/VideoPost";
 
 const BlogPage = () => {
     return (
-      <div className="container mx-auto p-4 md:p-0">
-        <h1 className="text-4xl font-bold uppercase mt-4">Últimos videos</h1>
+      <div className="container mx-auto p-4 md:pb-32">
+        <h1 className="text-4xl font-bold uppercase mt-4 text-white">Últimos videos</h1>
 
         <VideoPost
           title={'Title of video'}

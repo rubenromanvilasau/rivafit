@@ -14,7 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Rivafit",
+  title: "Rivanex",
   description: "El gimanasio no1 de Chile",
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + 'min-h-screen flex flex-col justify-between'}>
+      <body className={inter.className + 'min-h-screen flex flex-col justify-between bg-black'}>
         <Navbar/>
         <div className="flex-grow">
           {children}

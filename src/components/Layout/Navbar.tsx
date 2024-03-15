@@ -9,7 +9,7 @@ const Navbar = () => {
     const pathname = usePathname();
 
     return (
-        <div className="bg-black flex justify-between py-2 px-4 items-center border-purple-400 border-b-2 sticky top-0 z-50">
+        <div className="bg-black flex justify-between py-2 px-4 items-center border-primary border-b-2 sticky top-0 z-50">
             <div className="flex items-center">
                 <GiHamburgerMenu className="text-white text-4xl cursor-pointer md:hidden"/>
                 <Link href={'/'}>
@@ -36,7 +36,7 @@ const Navbar = () => {
             </ul>
 
             <Link href={'/inscripcion'}>
-                <button className="bg-purple-700 text-white tracking-widest rounded-full h-11 p-4 flex items-center uppercase font-bold hover:bg-white hover:text-purple-700 border-2 border-purple-800 transition-all ease-in duration-300">
+                <button className="bg-black text-primary tracking-widest rounded-full h-11 p-4 flex items-center uppercase font-bold hover:bg-primary hover:text-black border-2 border-primary transition-all ease-in duration-300">
                     Unirme
                 </button>
             </Link>

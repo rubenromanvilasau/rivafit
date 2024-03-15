@@ -14,7 +14,7 @@ type Props = {
 
 const VideoPost = ({ month, day, title, description, imagePath, videoUrl }: Props) => {
     return (
-        <div className="flex items-center gap-4 border-t-2 border-b-2 border-purple-200 mt-2 py-4">
+        <div className="flex items-center gap-4 border-b-2 border-purple-200 mt-2 py-4">
             <div className="flex flex-col">
                 <span className="text-slate-600 tracking-widest">{ month }</span>
                 <span className="block text-slate-600 tracking-widest text-4xl">{ day }</span>
@@ -34,7 +34,7 @@ const VideoPost = ({ month, day, title, description, imagePath, videoUrl }: Prop
                 </Link>
             </div>
             <div className="flex flex-col">
-                <span className="font-bold text-lg text-purple-800">{ title }</span>
+                <span className="font-bold text-lg text-primary">{ title }</span>
                 <p className="text-light text-slate-500">{ description }</p>
             </div>
         </div>
