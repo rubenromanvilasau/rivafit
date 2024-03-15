@@ -1,12 +1,7 @@
 import React from 'react'
 import { FaClipboard } from 'react-icons/fa';
 import { showSuccessToast } from '../utils';
-
-//TODO GLOBALIZE THIS
-interface LatLng {
-    lat: number,
-    lng: number,
-};
+import { LatLng } from '@/types';
 
 type Props = {
     onClickAddress: (latLng: LatLng) => void;

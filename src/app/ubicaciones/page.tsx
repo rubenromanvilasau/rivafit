@@ -1,12 +1,7 @@
 'use client'
 import { useEffect, useState } from "react"
 import Address from "@/components/Address";
-
-//TODO GLOBALIZE THIS
-interface LatLng {
-    lat: number,
-    lng: number,
-};
+import { LatLng } from "@/types";
 
 const gyms = [
     {
