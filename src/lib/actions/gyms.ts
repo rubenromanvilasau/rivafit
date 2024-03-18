@@ -1,5 +1,6 @@
-import { prisma } from '@/lib/prisma';
+// import { prisma } from '@/lib/prisma';
 
 export const getAllGyms = () => {
-    return prisma.gym.findMany();
+    // return prisma.gym.findMany();
+    return [];
 }

@@ -51,7 +51,6 @@ interface Plan {
     features: string[];
 };
 
-
 type Props = {
 };
 
@@ -65,7 +64,7 @@ const PlanesPage = async ({  }: Props) => {
 
             {/* Cards planes */}
             <div className="flex justify-center gap-4 flex-wrap">
-                { plans.map( (plan: any) => (
+                { planes.map( (plan: any) => (
                     <PlanCard 
                         key={plan.id}
                         {...plan}

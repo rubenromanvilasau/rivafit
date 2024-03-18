@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma';
+// import { prisma } from '@/lib/prisma';
 
 export const getAllFeatures = async () => {
     // const features = await prisma..findMany();
