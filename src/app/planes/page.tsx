@@ -7,8 +7,8 @@ const planes = [
         name: 'Básico', 
         price: 35000,
         features: [
-            { id: 1, description: 'Acceso a clases grupales' },
-            { id: 2, description: 'Acceso a área de cardio' },
+            { id: 1, name: 'Acceso a clases grupales' },
+            { id: 2, name: 'Acceso a área de cardio' },
         ]
     },
     {
@@ -16,9 +16,9 @@ const planes = [
         name: 'Intermedio',
         price: 55000,
         features: [
-            { id: 1, description: 'Acceso a clases grupales' },
-            { id: 2, description: 'Acceso a área de cardio' },
-            { id: 3, description: 'Acceso a área de pesas' },
+            { id: 1, name: 'Acceso a clases grupales' },
+            { id: 2, name: 'Acceso a área de cardio' },
+            { id: 3, name: 'Acceso a área de pesas' },
         ]
     },
     {
@@ -26,10 +26,10 @@ const planes = [
         price: 60000,
         name: 'Avanzado',
         features: [
-            { id: 1, description: 'Acceso a clases grupales' },
-            { id: 2, description: 'Acceso a área de cardio' },
-            { id: 3, description: 'Acceso a área de pesas' },
-            { id: 4, description: 'Acceso a sauna' },
+            { id: 1, name: 'Acceso a clases grupales' },
+            { id: 2, name: 'Acceso a área de cardio' },
+            { id: 3, name: 'Acceso a área de pesas' },
+            { id: 4, name: 'Acceso a sauna' },
         ]
     },
     {
@@ -37,10 +37,10 @@ const planes = [
         price: 60000,
         name: 'Entrenador',
         features: [
-            { id: 1, description: 'Trae cuantos clientes quieras' },
-            { id: 2, description: 'Acceso a área de cardio' },
-            { id: 3, description: 'Acceso a área de pesas' },
-            { id: 4, description: 'Acceso a sauna' },
+            { id: 1, name: 'Trae cuantos clientes quieras' },
+            { id: 2, name: 'Acceso a área de cardio' },
+            { id: 3, name: 'Acceso a área de pesas' },
+            { id: 4, name: 'Acceso a sauna' },
         ]
     }
 ];
