@@ -17,6 +17,7 @@ model Plan {
   planId        Int               @id @default(autoincrement()) @map(name: "plan_id")
   name          String?
   price         Int
+  stock         Int
 
   features      PlanFeature[]
   clients       Client[]

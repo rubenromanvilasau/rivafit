@@ -11,9 +11,10 @@ type Props = {
     name: string;
     features: Feature[];
     price: number;
+    stock: number;
 }
 
-const PlanCard = ({ name, features, price }: Props) => {
+const PlanCard = ({ name, features, price, stock }: Props) => {
     return (
         <div className="bg-white rounded-lg w-fit mt-4 flex flex-col justify-between">
             <div className="bg-primary p-4 rounded-t-lg border-b-4 border-yellow-300">
@@ -23,7 +24,7 @@ const PlanCard = ({ name, features, price }: Props) => {
                     <span className="text-3xl text-black font-semibold">{ toCurrency( price ) }</span>
 
                 </div>
-                <span className="text-xs text-black font-light">Mensual</span>
+                {/* <span className="text-xs text-black font-light">Mensual</span> */}
             </div>
             <div className="p-4">
                 <ul className="p-4">
@@ -34,7 +35,10 @@ const PlanCard = ({ name, features, price }: Props) => {
                 </ul>
             </div>
             <Link href={'/inscripcion'}>
-                <button className='w-full uppercase rounded-b-md font-bold tracking-wider text-primary p-4 bg-black border-2 border-black border-primary transition-all ease-in duration-300'>
+                <button 
+                    className={`${stock <= 0 && 'opacity-70 line-through'} w-full uppercase rounded-b-md font-bold tracking-wider text-primary p-4 bg-black border-2 border-primary transition-all ease-in duration-300`}
+                    disabled={stock <= 0}
+                >
                     Lo quiero
                 </button>
             </Link>

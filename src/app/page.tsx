@@ -19,19 +19,19 @@ export default async function Home() {
         
         <div className="flex gap-4 absolute bottom-16 left-12">
           <Feature
-            imagePath="/images/girl-trainer.jpg"
+            imagePath="/images/instalaciones.png"
             title="Máquinas de alta calidad"
             description="Nuestras máquinas son de alta calidad, con marcas como ILUS y GymLeco"
           />
 
           <Feature
-            imagePath="/images/man-trainer.jpg"
+            imagePath="/images/no-acoso.png"
             title="Acoso CERO"
             description="Nos preocupamos de que esté estrictamente prohibido el acoso en nuestras instalaciones"
           />
 
           <Feature
-            imagePath="/images/girl-trainer.jpg"
+            imagePath="/images/asistencia.png"
             title="Asistencia en entrenamientos"
             description="Nuestros profesores en sala te ayudarán a mejorar tu técnica y a alcanzar tus objetivos sin coste adicional"
           />

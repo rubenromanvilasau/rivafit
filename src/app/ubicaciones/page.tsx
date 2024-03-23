@@ -2,29 +2,11 @@
 import { useEffect, useState } from "react"
 import Address from "@/components/Address";
 import { LatLng } from "@/types";
-
-const gyms = [
-    {
-        id: 1,
-        name: "Rivanex",
-        address: "Av. Providencia 1234, Providencia, Santiago, Chile",
-        location: "Providencia",
-        phone: "+56 9 1234 5678",
-        coordinates: { lat: -33.430637, lng: -70.609677 },
-    },
-    {
-        id: 2,
-        name: "Rivanex",
-        address: "Av. Las Condes 1234, Las Condes, Santiago, Chile",
-        location: "Las Condes",
-        phone: "+56 9 1234 5678",
-        coordinates: { lat: -33.409455, lng: -70.568890 },
-    },
-];
+import { gyms } from "@/lib/constants";
 
 const UbicacionesPage = () => {
 
-    const [mapCenter, setMapCenter] = useState<LatLng>({ lat: -33.430637, lng: -70.609677 });
+    const [mapCenter, setMapCenter] = useState<LatLng>({ lat: -33.024258, lng: -71.549009 });
 
 
     const changeMapCenter = ( latLng: LatLng ) => {

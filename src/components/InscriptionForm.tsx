@@ -1,3 +1,5 @@
+import { planes } from "@/lib/constants";
+
 const InscriptionForm = () => {
     
     const onSubmit = (formData: FormData) => {
@@ -43,9 +45,9 @@ const InscriptionForm = () => {
                 <div className="flex flex-col">
                     <label htmlFor="plan" className="text-slate-400">Plan</label>
                     <select name="plan" className="bg-transparent border-b-2 border-primary rounded-none focus:outline-none text-white p-2 w-full cursor-pointer">
-                        <option value="" className="bg-black text-white">Básico</option>   
-                        <option value="" className="bg-black text-white">Intermedio</option>
-                        <option value="" className="bg-black text-white">Full</option>
+                        { planes.map( plan => (
+                            <option key={plan.id} value={plan.id} className="bg-black text-white">{plan.name}</option>
+                        ))}   
                     </select>
                 </div>
 

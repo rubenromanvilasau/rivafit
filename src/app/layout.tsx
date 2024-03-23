@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Rivanex",
-  description: "El gimanasio no1 de Chile",
+  description: "Un gimnasio que marca la diferencia.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + 'min-h-screen flex flex-col justify-between bg-black'}>
+      <body className={poppins.className + 'min-h-screen flex flex-col justify-between bg-black'}>
         <Navbar/>
         <div className="flex-grow">
           {children}
