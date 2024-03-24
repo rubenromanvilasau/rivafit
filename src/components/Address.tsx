@@ -8,11 +8,11 @@ type Props = {
     gymName: string;
     location: string;
     address: string;
-    phone: string;
+    contact: string;
     coordinates: LatLng
 };
 
-const Address = ({ onClickAddress, gymName, location, address, phone, coordinates }: Props) => {
+const Address = ({ onClickAddress, gymName, location, address, contact, coordinates }: Props) => {
 
     const copyAddress = async( address: string ) => {
         try{
@@ -48,7 +48,7 @@ const Address = ({ onClickAddress, gymName, location, address, phone, coordinate
             </div>
             <div>
                 <h2 className="text-2xl font-bold text-white">Contacto</h2>
-                <p className='text-white'>{ phone }</p>
+                <p className='text-white'>{ contact }</p>
             </div>
         </div>
     )

@@ -1,10 +1,24 @@
+'use client'
 import { members } from '@/lib/constants';
 import { FaLock, FaUnlock } from 'react-icons/fa';
+import ManageMember from '@/components/ManageMember';
+import { useState } from 'react';
 
 const MembersPage = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    
     return (
         <div className='p-8'>
             <h1 className='text-primary text-4xl'>Gestionar miembros</h1>
+            <div className="flex justify-end w-100">
+                <button 
+                    className="rounded-lg bg-primary text-black border-2 border-primary hover:bg-transparent hover:text-primary duration-300 px-4 py-2"
+                    onClick={() => setIsModalOpen(true)}
+                >
+                    Agregar miembro
+                </button>
+            </div>
             <div className="flex flex-col">
                 <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
@@ -30,7 +44,7 @@ const MembersPage = () => {
                                             <td className="whitespace-nowrap px-6 py-4 text-white">{member.createdAt}</td>
                                             <td className="whitespace-nowrap px-6 py-4 text-white">{ 
                                                 member.isActive 
-                                                    ? <button className='hover:scale-105 duration-300'><FaLock size={25} color='red'/></button>
+                                                    ? <button className='hover:scale-105 duration-300'><FaLock size={25} color='#e53935'/></button>
                                                     : <button className='hover:scale-105 duration-300'><FaUnlock size={25} color='green'/></button>}
                                             </td>
                                         </tr>
@@ -41,6 +55,10 @@ const MembersPage = () => {
                     </div>
                 </div>
             </div>
+            <ManageMember
+                show={isModalOpen}
+                onHide={() => setIsModalOpen(false)}
+            />
         </div>
     )
 }

@@ -1,7 +1,6 @@
-import { getAllPlans } from "@/lib/actions/plans";
+// import { getAllPlans } from "@/lib/actions/plans";
 import PlanCard from "@/components/PlanCard";
 import { planes } from "@/lib/constants";
-planes
 
 interface Plan {
     name: string;
@@ -17,7 +16,7 @@ const PlanesPage = async ({  }: Props) => {
     // console.log('plans', plans);
 
     return (
-        <div className="container mx-auto pt-2 pb-32">
+        <div className="container mx-auto p-2 pb-32">
             <h1 className="text-4xl uppercase font-bold mt-4 text-white">Nuestros planes</h1>
 
             {/* Cards planes */}

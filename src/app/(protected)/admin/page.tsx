@@ -1,5 +1,5 @@
 
-import { MdOutlineShowChart } from "react-icons/md";
+import Chartt from '@/components/Chart';
 import StatisticCard from '../../../components/StatisticCard';
 import { toCurrency } from "@/utils";
 
@@ -50,6 +50,9 @@ const AdminPage = () => {
                     </tbody>
                 </table> 
             </div>
+            {/* <div className='h-96 '>
+                <Chartt/>
+            </div> */}
 
         </div>
     )

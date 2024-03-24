@@ -23,35 +23,22 @@ const NosotrosPage = () => {
                 ))}
             </div>
 
+            <hr className="border-primary mt-16"/>
+
             <h2 className="text-4xl mt-16 font-bold uppercase text-white underline underline-offset-4">Nuestras máquinas</h2>
             <div className="flex mt-8 gap-8 flex-wrap">
 
                 {/* Machine card */}
-                <div className="flex gap-4">
-                    <Image
-                        src={"/images/hacklift-244.webp"}
-                        alt="hacklift 244 image"
-                        width={200}
-                        height={200}
-                        className="rounded-lg"
-                    />
-                    <div className="flex flex-col w-[150px]">
-                        <span className="text-primary font-bold text-xl">Hacklift 244</span>
-                        <p className="text-white">Máquina para trabajar piernas y glúteos</p>
-                    </div>
-                </div>
-
-                {/* Machine card */}
                 {machines.map(machine => (
-                    <div key={machine.id} className="flex gap-4">
+                    <div key={machine.id} className="flex gap-8 items-start">
                         <Image
-                            src={"/images/hacklift-244.webp"}
+                            src={machine.image}
                             alt="hacklift 244 image"
                             width={200}
                             height={200}
-                            className="rounded-lg"
+                            className="rounded-lg object-contain"
                         />
-                        <div className="flex flex-col w-[150px]">
+                        <div className="flex flex-col w-[300px]">
                             <span className="text-primary font-bold text-xl">{machine.name}</span>
                             <p className="text-white">{machine.description}</p>
                         </div>

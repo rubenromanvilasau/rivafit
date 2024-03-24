@@ -32,7 +32,7 @@ const UbicacionesPage = () => {
                                 gymName={gym.name}
                                 address={gym.address}
                                 location={gym.location}
-                                phone={gym.phone}
+                                contact={gym.contact}
                                 coordinates={gym.coordinates}
                                 onClickAddress={changeMapCenter}
                             />

@@ -16,7 +16,7 @@ type Props = {
 
 const PlanCard = ({ name, features, price, stock }: Props) => {
     return (
-        <div className="bg-white rounded-lg w-fit mt-4 flex flex-col justify-between">
+        <div className="bg-transparent border border-primary rounded-lg w-fit mt-4 flex flex-col justify-between">
             <div className="bg-primary p-4 rounded-t-lg border-b-4 border-yellow-300">
                 <div className="flex justify-between items-center">
                     <span className="text-xl  text-black">{ name }</span>
@@ -29,7 +29,7 @@ const PlanCard = ({ name, features, price, stock }: Props) => {
             <div className="p-4">
                 <ul className="p-4">
                     { features.map( feature => (
-                        <li key={feature.id} className="text-slate-500 border-b-2 border-yellow-300 mb-4">{ feature.name }</li>
+                        <li key={feature.id} className="text-white border-b-2 border-yellow-300 mb-4">{ feature.name }</li>
 
                     ))}
                 </ul>
@@ -39,7 +39,7 @@ const PlanCard = ({ name, features, price, stock }: Props) => {
                     className={`${stock <= 0 && 'opacity-70 line-through'} w-full uppercase rounded-b-md font-bold tracking-wider text-primary p-4 bg-black border-2 border-primary transition-all ease-in duration-300`}
                     disabled={stock <= 0}
                 >
-                    Lo quiero
+                    { stock > 0 ? 'Lo quiero' : 'Agotado'}
                 </button>
             </Link>
         </div>

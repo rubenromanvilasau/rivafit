@@ -22,7 +22,7 @@ const VideoPost = ({ month, day, title, description, imagePath, videoUrl }: Prop
             <div className="relative flex-grow">
                 <Link href={ videoUrl } rel="noopener noreferrer" target="_blank">
                 <Image 
-                    className="rounded-lg grayscale cursor-pointer hover:opacity-50"
+                    className="rounded-lg cursor-pointer hover:opacity-50"
                     src={ imagePath }
                     width={0} 
                     height={0}

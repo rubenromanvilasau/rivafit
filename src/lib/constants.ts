@@ -27,34 +27,40 @@ export const tabs = [
 
 export const machines = [
     {
+        id: 1,
+        name: 'Hack GymLeco',
+        description: 'Esta marca de máquinas las puedes encontrar en el gimnasio de CBUM. Es perfecta porque puedes regular la base, a diferencia de las hacks fijas.',
+        image: 'https://fitnex.cl/cdn/shop/files/hacklift-244-plate-loaded-gym-machine-friviktsmaskin-gymleco-1.jpg?v=1707134631&width=750'
+    },
+    {
         id: 2,
-        name: 'Squat Master 5000',
-        description: 'Equipment for full-body squats and lunges',
-        image:  '/images/hacklift-244.webp',
+        name: 'Leg Press GymLeco',
+        description: 'Esta prensa es regulable de la base también, lo que la hace muy cómoda para personas con rangos de movimiento muy cortos o largos, ya que se ajusta tanto el respaldo, como la base (apoyo de pies)',
+        image:  'https://fitnex.cl/cdn/shop/files/G243_1.jpg?v=1707134903&width=750',
     },
     {
         id: 3,
-        name: 'LegPress Pro',
-        description: 'Professional-grade leg press machine for lower body strength training',
-        image:  '/images/hacklift-244.webp',
+        name: 'Booty Builder Platinum',
+        description: 'El fabricador de glúteos por excelencia. Buscamos lo mejor para ti.',
+        image:  'https://fitnex.cl/cdn/shop/files/Booty_Builder_Platinum_4_0_6.jpg?v=1707135813&width=750',
     },
     {
         id: 4,
-        name: 'GluteBlaster X2',
-        description: 'Advanced device for targeted glute activation and development',
-        image:  '/images/hacklift-244.webp',
+        name: 'Leg Extension ILUS',
+        description: 'La ILUS Kairos Evolve Leg Extension es una máquina especializada, evolución de nuestra serie selectorizada de alta gama. Se enfoca en el entrenamiento de las extremidades inferiores; en específico en el desarrollo y fortalecimiento de los cuádriceps.',
+        image:  'https://fitnex.cl/cdn/shop/files/Captura_de_pantalla_2024-02-05_a_la_s_09.27.26.png?v=1707136061&width=750',
     },
     {
         id: 5,
-        name: 'QuadSculptor 3000',
-        description: 'Cutting-edge quad training machine for sculpting thighs and quads',
-        image:  '/images/hacklift-244.webp',
+        name: 'ILUS 4 Stack Jungle',
+        description: 'Para los verdaderos amantes del ejercicio; la ILUS 4 Stacks Jungle tiene todo lo necesario para entrenar con poleas en un espacio centralizado y reducido: Cuatro máquinas en una.',
+        image:  'https://fitnex.cl/cdn/shop/files/Captura_de_pantalla_2024-02-05_a_la_s_09.30.26.png?v=1707136289&width=750',
     },
     {
         id: 6,
-        name: 'HamstringMaster 2000',
-        description: 'Specialized equipment for isolating and strengthening hamstrings',
-        image:  '/images/hacklift-244.webp',
+        name: 'ILUS Kairos Evolve Dual Pulley Pro',
+        description: 'En la ILUS Kairos Evolve Dual Pulley pueden entrenar dos personas a la vez usando sus poleas de forma independiente. Cada salida de polea cuenta con tomadas enganchadas con mosquetones.',
+        image:  'https://fitnex.cl/cdn/shop/files/Captura_de_pantalla_2024-02-05_a_la_s_09.33.20.png?v=1707136416&width=750',
     }
 ];
 
@@ -111,6 +117,20 @@ export const trainers = [
         tiktok: "https://www.tiktok.com/",
         image: "/images/girl-trainer.jpg",
         discipline: "Pilates",
+    },
+    {
+        name: "Roberto",
+        instagram: "https://www.instagram.com/",
+        tiktok: "https://www.tiktok.com/",
+        image: "/images/man-trainer.jpg",
+        discipline: "Calistenia",
+    },
+    {
+        name: "Carla",
+        instagram: "https://www.instagram.com/",
+        tiktok: "https://www.tiktok.com/",
+        image: "/images/girl-trainer.jpg",
+        discipline: "Yoga",
     }
 ];
 

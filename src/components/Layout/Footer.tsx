@@ -20,24 +20,24 @@ const Footer = () => {
             <div className="flex flex-col items-center gap-4">
                 <div className="flex items-center gap-4">
                     <Link href={'https://www.facebok.com'} rel="noopener noreferrer" target="_blank">
-                        <FaFacebook className="text-2xl text-white cursor-pointer"/>
+                        <FaFacebook className="text-2xl text-white cursor-pointer hover:text-primary transition-all ease-in duration-300"/>
                     </Link>
                     <Link href={'https://www.instagram.com'} rel="noopener noreferrer" target="_blank">
-                        <FaInstagram className="text-2xl text-white cursor-pointer"/>
+                        <FaInstagram className="text-2xl text-white cursor-pointer hover:text-primary transition-all ease-in duration-300"/>
                     </Link>
                     <Link href={'https://www.tiktok.com'} rel="noopener noreferrer" target="_blank">
-                        <FaTiktok className="text-2xl text-white cursor-pointer"/>
+                        <FaTiktok className="text-2xl text-white cursor-pointer hover:text-primary transition-all ease-in duration-300"/>
                     </Link>
                     <Link  href={'https://www.twitter.com'} rel="noopener noreferrer" target="_blank">
-                        <FaTwitter className="text-2xl text-white cursor-pointer"/>
+                        <FaTwitter className="text-2xl text-white cursor-pointer hover:text-primary transition-all ease-in duration-300"/>
                     </Link>
                 </div>
                 <div className="flex items-center gap-2">
                     <Link href={'https://wa.me/56989209062'} rel="noopener noreferrer" target="_blank">
-                        <FaWhatsapp className="text-2xl text-white cursor-pointer"/>
+                        <FaWhatsapp className="text-2xl text-white cursor-pointer hover:text-primary transition-all ease-in duration-300"/>
                     </Link>
                     <Link href={'https://wa.me/56989209062'} rel="noopener noreferrer" target="_blank">
-                        <span className="underline underline-offset-2 text-white">+56 9 1234 5678</span>
+                        <span className="underline underline-offset-2 text-white" title="Abrir whatsapp">+56 9 1234 5678</span>
                     </Link>
                 </div>
                 <small className="text-slate-500">©Rivanex, {new Date().getFullYear()}</small>
