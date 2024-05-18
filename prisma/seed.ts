@@ -7,6 +7,7 @@ async function main() {
     create: {
       planId: 1,
       name: 'Básico',
+      stock: 70,
       price: 35000,
         features: {
             create: [
@@ -23,6 +24,7 @@ async function main() {
     create: {
       planId: 2,
       name: 'Intermedio',
+      stock: 70,
       price: 60000,
         features: {
             create: [
@@ -41,6 +43,7 @@ async function main() {
     create: {
       planId: 3,
       name: 'Entrenador',
+      stock: 70,
       price: 75000,
         features: {
             create: [
