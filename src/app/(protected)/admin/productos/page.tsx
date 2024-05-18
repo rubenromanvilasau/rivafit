@@ -11,7 +11,7 @@ const ProductosPage = () => {
 
     return (
         <div className="p-8">
-            <h1 className="p-8 text-white text-4xl">Gestionar productos</h1>
+            <h1 className="text-primary text-4xl">Gestionar productos</h1>
             <div className="flex justify-end w-100">
                 <button 
                     className="rounded-lg bg-primary text-black border-2 border-primary hover:bg-transparent hover:text-primary duration-300 px-4 py-2"
